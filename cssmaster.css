@@ -1,5 +1,5 @@
-body {
-  background: red;
+* {
+  font-family: roboto;
 }
 
 /*mobiles (portrait)*/
@@ -10,7 +10,8 @@ body {
 /*tablets, mobiles (landscape)*/
 @media (min-width: 481px) and (max-width: 767px) {
   body {
-    background: green;
+    background: pink;
+    color: black;
   }
 }
 
@@ -18,6 +19,7 @@ body {
 @media (min-width: 768px) and (max-width: 1024px) {
   body {
     background: yellow;
+    color: black;
   }
 }
 
@@ -33,10 +35,7 @@ body {
 @media (min-width: 1281px) {
   body {
     background: rebeccapurple;
-    color : #fff;
-  }
-  .example-five {
-    display: block;
+    color: #fff;
   }
 }
 
