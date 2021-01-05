@@ -20,7 +20,31 @@
 /*laptops*/
 @media (min-width: 1025px) and (max-width: 1280px) {
   body {
+    width: 92%;
     background: black;
+    margin: auto;
+  }
+
+.columns {
+  columns: 3;
+  column-gap: 10%;
+  column-rule: 1px solid #008000
+}
+
+  h1 {
+    margin-top: 16px;
+  }
+
+  h2 {
+    color: green;
+    font-size: 38px;
+    column-span: all;
+    margin-bottom: 32px;
+    margin-top: 32px;
+  }
+
+  p {
+    font-size: 18px;
   }
 }
 
