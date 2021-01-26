@@ -26,3 +26,7 @@ li {
   display: block;
   float: left;
 }
+
+nav .active {
+  color: #5c61ff;
+}
