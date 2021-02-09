@@ -13,10 +13,20 @@
   height:600px;
 }
 
+
 picture img {
   float:left;
   width:100%;
   height:100%;
   object-fit: cover;
   object-position: 50% 50%;
+}
+
+picture {
+  filter: grayscale(0%) blur(0px);
+  transition: .3s ease-in-out;
+}
+
+picture:hover {
+  filter: grayscale(100%) blur(2px)
 }
