@@ -1,50 +1,107 @@
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 header {
-  background-color: white;
-  height: 100px;
+  background-color: #5c61ff;
+  height: 80px;
   box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.15);
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
-ul {
-  list-style: circle inside;
+nav {
+  height: 10vh;
+  background: #5c61ff;
 }
 
-ol {
-  list-style: decimal inside;
+.active {
+  font-weight: bold;
 }
 
-ol, ul {
-  padding-left: 0;
-  margin-top: 0;
-}
-
-ul ul, ul ol, ol ol, ol ul {
-	font-size: 100%;
-	margin: 1rem 0 1rem 3rem;
-	color: var(--text-color-softer);
-}
-
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: #5c61ff;
-}
-
-li {
-  margin-bottom: 0.5rem;
+.nav-links {
+  display: flex;
   list-style: none;
-  padding: 30px 30px 0 0;
-  display: block;
-  float: left;
+  width: 50%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
 }
 
-nav .active {
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.landing {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing h1 {
+  margin: 100px;
+  font-size: 50px;
   color: #5c61ff;
+}
+
+@media screen and (max-width: 600px) {
+  .line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+  }
+  nav {
+    position: relative;
+  }
+
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+
+  .nav-links {
+    position: fixed;
+    background: #5c61ff;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+  .nav-links.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
+  .landing {
+    flex-direction: column;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .nav-links li a {
+    font-size: 25px;
+  }
+  .nav-links li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+  }
+  .nav-links li:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
+  }
+  .nav-links li:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
+  }
+  li.fade {
+    opacity: 1;
+  }
 }
