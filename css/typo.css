@@ -21,7 +21,7 @@ p {
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h3, h4, h5, h6 {
-  margin: 3rem 50px 1.38rem;
+  margin: 3rem 0px 1.38rem;
   color: #5c61ff;
   font-family: var(--title-font);
   font-weight: 400;

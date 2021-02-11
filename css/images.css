@@ -9,24 +9,40 @@
 
 
 #test {
-  width: 100%;
-  height:600px;
+  position: relative;
+  width: 450px;
+  height: 300px;
+  background-image: url("https://images.unsplash.com/photo-1548092372-0d1bd40894a3?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80");
+}
+
+#test > p {
+  visibility: hidden;
+  margin-top: 24%;
+  text-align: center;
+  font-size: 36px;
+}
+
+#test:hover > p {
+  visibility: visible;
+  animation: fadein 1s;
+  color: white;
+  font-weight: bold;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
 }
 
 
 picture img {
   float:left;
   width:100%;
-  height:100%;
+  height: 300px;
   object-fit: cover;
   object-position: 50% 50%;
-}
-
-picture {
-  filter: grayscale(0%) blur(0px);
-  transition: .3s ease-in-out;
-}
-
-picture:hover {
-  filter: grayscale(100%) blur(2px)
 }

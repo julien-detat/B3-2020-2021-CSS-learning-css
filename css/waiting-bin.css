@@ -1,1 +1,20 @@
+/* .ressource-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  max-width: var(--grid-flex-max-width)
+}
 
+.ressource-list > * {
+  flex-basis: 320px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  background: yellow;
+  border: 1px solid red;
+}
+
+.ressource-list-item figure {
+  float: left;
+}
