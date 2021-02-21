@@ -50,7 +50,7 @@ small, .text_small {font-size: 0.667rem;}
 
   h2 {
     font-size: 3.157rem;
-    margin: 3rem 0px 1.38rem;
+    margin: 0rem 0px 1.38rem;
     color: #5c61ff;
     font-family: var(--title-font);
     font-weight: 400;
@@ -60,7 +60,7 @@ small, .text_small {font-size: 0.667rem;}
   h3 {
     width: 100%;
     margin-left: 0px;
-    margin-top: 10px;
+    margin-top: 5px;
     float: left;
     font-size: 2.369rem;
   }
@@ -85,7 +85,7 @@ p {
 
   h2 {
     font-size: 5.063rem;
-    margin: 3rem 0px 1.38rem;
+    margin: 0rem 0px 1.38rem;
     color: #5c61ff;
     font-family: var(--title-font);
     font-weight: 400;
@@ -95,7 +95,7 @@ p {
   h3 {
     width: 100%;
     margin-left: 0px;
-    margin-top: 10px;
+    margin-top: 5px;
     float: left;
     font-size: 3.375rem;
   }
@@ -111,8 +111,9 @@ p {
 
 
 .introduction {
-  border : 1px solid blue;
+  margin-top: -20px;
+  border : 2px solid #5c61ff;
   padding : 2em;
-  background: #add8e6;
+  background: #f0f0ff;
   font-weight: bold;
 }

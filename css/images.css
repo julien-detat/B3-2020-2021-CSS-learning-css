@@ -38,6 +38,9 @@
     }
 }
 
+#imgprofil img {
+  margin-bottom: 20px;
+}
 
 picture img {
   float:left;
